@@ -1,5 +1,3 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
-
-createApp(App).mount('#app')
+import { defineCustomElement } from "vue"
+import PokemonList from "./components/PokemonList/PokemonList.vue"
+customElements.define("pokemon-list", defineCustomElement(PokemonList))
