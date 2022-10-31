@@ -3,6 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "./dist/pokemon-ce.umd.js",
+  "module": "./dist/pokemon-ce.js",
+  "exports": {
+    ".": {
+      "import": "./dist/pokemon-ce.js",
+      "require": "./dist/pokemon-ce.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
