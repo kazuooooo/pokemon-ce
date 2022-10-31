@@ -3700,5 +3700,5 @@ const As = (e, t) => {
   customElements.define("pokemon-list", $l(fu));
 };
 export {
-  au as usePokemonList
+  au as definePokemonList
 };
